@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" ref="registration.css">
+</head>
+<body>
+
+<html_code
+	<div class="container">
+		<div class="row">
+				<form action="$_SERVER[PHP_SELF]" method="post" enctype="multipart/form-data">
+					<div class="form-group">
+						<label class="control-label">Name</label>
+						<input type="text" name="name" placeholder="Name" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="control-label">E-mail</label>
+						<input type="text" name="email" placeholder="Email" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="control-label">Password</label>
+						<input type="password" name="pass" placeholder="Password" class="form-control">	
+					</div>
+					<div class="form-group">
+						<label class="control-label">Gender</label>
+						<input type="radio" name="gender" value="Male" checked>Male
+						<input type="radio" name="gender" value="Female">Female
+					</div>
+					<div class="form-group">
+						<label class="control-label">Language</label>
+						<input type="checkbox" name="lang[]" value="C++">C++
+						<input type="checkbox" name="lang[]" value="Java">Java
+						<input type="checkbox" name="lang[]" value="php">php
+					</div>
+					<div class="form-group">
+						<label class="control-label">File</label>
+						<input type="file" name="newfile[]" multiple>
+					</div>
+					<input type="submit" class="btn btn-primary" name="type" value="Insert">
+				</form>
+			</div>
+		</div>
+	</div> 
+</div> 
+</body>
+</html>
